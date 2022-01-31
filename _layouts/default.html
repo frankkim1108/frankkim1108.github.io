@@ -31,6 +31,10 @@ layout: compress
       <div id="main">
 
         {{ content }}
+        
+        {% if page.use_math %}
+        {% include mathjax_support.html %}
+        {% endif %}
 
         {% include footer.html %}
 
