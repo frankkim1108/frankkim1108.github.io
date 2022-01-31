@@ -103,7 +103,11 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
+<<<<<<< HEAD
   x86_64-darwin-20
+=======
+  arm64-darwin-21
+>>>>>>> 8d586162425e4a7790a922543bb8e9766e506d58
 
 DEPENDENCIES
   html-proofer (~> 3.18)
