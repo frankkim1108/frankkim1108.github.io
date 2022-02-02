@@ -7,23 +7,23 @@ use_math: true
 ---
 {% raw %}
 
-# Backpropagation and Neural Networks
+# **Backpropagation and Neural Networks**
 
 - Numerical gradient is slow and approximate but easy to write
 - Analytic gradient is fast and exact but easy to make mistakes
 - Chain rule is used during backpropagation
 - Backpropagation : Upstream gradient * local gradient
 
-## Backpropagation example
+## **Backpropagation example**
 
 **eg)**
-<img src="/images/slides_images/cs231n_2017_lecture4_1.jpg" style="float: center;" />
+<img src="/assets/img/slides_images/cs231n_2017_lecture4_1.jpg" style="float: center;" />
 
-<img src="/images/slides_images/cs231n_lecture4_2.png" style="float: center;">
+<img src="/assets/img/slides_images/cs231n_lecture4_2.png" style="float: center;">
 
 - the gradient of the sigmoid function is $\boldsymbol{(1 - a(x)) \times a(x)}$
 
-## Patterns in backward flow
+## **Patterns in backward flow**
 
 **add** gate: gradient distributor
 
@@ -39,11 +39,11 @@ use_math: true
 - **forward** : compute result of an operation and save any intermediates needed for gradient computation in memory
 - **backward** : apply the chain rule to compute the gradient of the loss funciton with respect to the inputs
 
-## Neural Networks (without the brain stuff)
+## **Neural Networks (without the brain stuff)**
 
 **Activation Functions**
 
-<img src="/images/slides_images/cs231n_lecture4_4.png">
+<img src="/assets/img/slides_images/cs231n_lecture4_4.png">
 
 &nbsp;
 

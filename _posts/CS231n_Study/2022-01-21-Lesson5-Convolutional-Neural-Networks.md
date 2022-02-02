@@ -24,13 +24,13 @@ use_math: true
 - ( CONV &rarr; RELU &rarr; CONV &rarr; RELU &rarr; POOL ) X n times and at the end use fully connected layer
 - Zero padding is used for keeping the Image size
 
-<img src="/images/slides_images/cs231n_lecture5_1.jpg">
+<img src="/assets/img/slides_images/cs231n_lecture5_1.jpg">
 
 ### **Pooling Layer**
 
 - makes the representations smaller and more manageable
 - downsampling
 
-<img src="/images/slides_images/cs231n_lecture5_2.jpg">
+<img src="/assets/img/slides_images/cs231n_lecture5_2.jpg">
 
 {% endraw %}
