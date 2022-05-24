@@ -1,5 +1,5 @@
 ---
-title: Lesson 6 - Training Neural Networks
+title: Lesson 6 - Training Neural Networks Part 1
 date: 2022-01-22 13:12:04 +0900
 categories: [CS231n]
 tags: [computer_vision]    # TAG names should always be lowercase
@@ -8,7 +8,7 @@ use_math: true
 
 {% raw %}
 
-# **Training Neural Networks**
+# **Training Neural Networks Part 1**
 
 ## **Overview**
 
