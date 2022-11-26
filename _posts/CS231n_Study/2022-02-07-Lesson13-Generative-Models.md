@@ -9,18 +9,18 @@ use_math: true
 # **Generative Models**
 
 ## **Lesson13**
-- Supervised Learning
+### Supervised Learning
     - Data (x, y): x is data, y is label
     - Goal: Learn a function to map x → y
     - eg) classification, regression, object detection, semantic segmentation, image captioning
-- Unsupervised Learning
+### Unsupervised Learning
     - Data x: just data, no label
     - Goal: Learn some underlying hidden structure of the data
     - eg) Clustering, dimensionality reduction, feature learning, density estimation
-- Generatvie Models
+### Generatvie Models
     - it creates realistic samples
     - most popular model: PixelRNN/CNN, Variational Auto-encoder, GAN
-- Pixel RNN/CNN
+### Pixel RNN/CNN
     - fully visible belief network
     - explicit density model
     - PixelRNN is sequentially generated so it is very slow
@@ -31,7 +31,7 @@ use_math: true
         - good samples
     - Con:
         - Sequential generation → slow
-- Variational Autoencoders (VAE)
+### Variational Autoencoders (VAE)
     - Input data → Encoder → Features → Decoder → Reconstructed Data → L2 Loss function
     - Encoder can be used to initialize a supervised model
     - Pros:
@@ -40,6 +40,7 @@ use_math: true
     - Cons:
         - Maximizes lower bound of likelihood: okay, but not as good evaluation as PixelRNN/PixelCNN
         - Samples blurrier and lower quality compared to state-of-the-art
-- GANs
-    - Generator network: try to fool the discriminator by generating real-looking images
-    - Discriminator network: try to distinguish between real and fake images
+### GANs
+    - **Generator network**: try to fool the discriminator by generating real-looking images
+    - **Discriminator network**: try to distinguish between real and fake images
+    - **DCGAN**: CNN model and GAN model is combined
