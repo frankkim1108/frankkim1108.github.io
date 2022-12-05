@@ -38,6 +38,6 @@ Non negative 의 장점
 ### t-SNE (Stochastic Neighbor Embedding)
 
 - t 분포 (가우시안 분포 아님)
-    - 가우시안 분포 보다 t 분포 기울기가 더 낮기 때문에 error가 줄어든다
+  - 가우시안 분포 보다 t 분포 기울기가 더 낮기 때문에 error가 줄어든다
 - Neighbor Embedding : 고차원에서 저차원으로 Data를 보낼 때 유사성 유지
 - Stochastic한 이유 : 기준점을 random으로 잡기 때문

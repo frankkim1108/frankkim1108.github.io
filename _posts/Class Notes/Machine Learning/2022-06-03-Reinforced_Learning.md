@@ -1,3 +1,11 @@
+---
+title: Reinforced Learning
+date: 2022-06-01 17:07:04 +0900
+categories: [Machine Learning]
+tags: [study]    # TAG names should always be lowercase
+use_math: true
+---
+
 # 강화 학습
 
 - 어떻게 상호작용을 하는가가 중요하다
@@ -5,12 +13,12 @@
 - perception $\uparrow$ , cognition $\uparrow$    →    판단력 $\uparrow$
 - 과거의 경험을 기반으로 현재의 나의 knowledge $\uparrow$
 - 벽돌깨기
-    - Agent: computer or machine
-    - Environment: Game
-    - State: Current game state
-    - Action: Moving the bar
-    - Reward: Score
-    - Policy: 판단력
+  - Agent: computer or machine
+  - Environment: Game
+  - State: Current game state
+  - Action: Moving the bar
+  - Reward: Score
+  - Policy: 판단력
 - policy를 올바르게 세워 나가는 과정
 
 Policy : 더 많은 reward를 받기 위해서 고민한다, function의 형태로 존재, 강화학습에서의 Kernel
@@ -42,8 +50,8 @@ Policy : 더 많은 reward를 받기 위해서 고민한다, function의 형태�
 - Dynamic Programming의 한 종류이다
 - Markov와의 차이점은 Markov는 바로 직전 state만 신경 쓰지만 Bellman은 모두 기억하면서 활용을 한다
 - 재귀 vs DP
-    - time complexity 차이가 매우 크다
-    - 재귀는 여러번 call 해야하지만 dp는 한번에 가져온다
+  - time complexity 차이가 매우 크다
+  - 재귀는 여러번 call 해야하지만 dp는 한번에 가져온다
 
 ### Monte-Calro Methods
 
@@ -51,7 +59,7 @@ Policy : 더 많은 reward를 받기 위해서 고민한다, function의 형태�
 - Model-free : 환경을 모르기 때문에 확률로 접근한다
 - Monte-Carlo Method: 무한이 여러번 Sampling 하면 한 특징을 그려낼 수 있다
 - 여러번 Sampling 하면서 특징이 결국에는 수렴을 해야하기 때문에 MCMC 사용
-    - 넓은 search space를 Markov Chain을 사용해서 space를 줄인다
+  - 넓은 search space를 Markov Chain을 사용해서 space를 줄인다
 
 ## Recap
 
@@ -72,15 +80,15 @@ Policy : 더 많은 reward를 받기 위해서 고민한다, function의 형태�
 - train data가 validation에 들어가서 검증을 오염시키면 안된다
 
 - 시계열 데이터 (Time series)
-    - Sliding Window를 사용해서 data augmentation을 하기 때문에 데이터 중첩이 일어난다
-    - Train 과 Validation이 자주 겹친다
-    - error가 자주 일어난다
-    - A : 나는, C : 기계, B: 나는 기계 사이
-    - 문제가 생긴다
-    
+  - Sliding Window를 사용해서 data augmentation을 하기 때문에 데이터 중첩이 일어난다
+  - Train 과 Validation이 자주 겹친다
+  - error가 자주 일어난다
+  - A : 나는, C : 기계, B: 나는 기계 사이
+  - 문제가 생긴다
+
 - 결정계수 (Coefficient of determination, $R^2$): 회귀의 정확도를 표현
-    - $R^2 = 1 - {(타깃 - 예측)^2의\space 합 \over (타깃 - 평균)^2 의 \space 합}$고
-    - 과대적합과 과소적합 확인 가능
+  - $R^2 = 1 - {(타깃 - 예측)^2의\space 합 \over (타깃 - 평균)^2 의 \space 합}$고
+  - 과대적합과 과소적합 확인 가능
 
 Accuracy의 한계: Positive만 물어본다, class imbalance를 알아내기 어렵다
 

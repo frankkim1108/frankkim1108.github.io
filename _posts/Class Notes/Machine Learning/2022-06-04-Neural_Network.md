@@ -10,7 +10,7 @@ use_math: true
 
 - XOR 문제 해결
 - Perceptron : 신경망의 최소 단위
-    - Input → weighted sum → activation function → output
+  - Input → weighted sum → activation function → output
 
 ## Back propagation (오차 역전파)
 
@@ -38,18 +38,20 @@ use_math: true
 ### 5. 파라미터 업데이트
 
 - 학습률
-    - Hyperparameter
+  - Hyperparameter
 
 ### 경사 하강법 (Gradient Decent)
 
 - 최소 제곱법을 사용해서 정답과 예측 사이의 거리를 줄였었다
 - 머신러닝에서의 최적화 문제
 - 최적화 목적 함수인 손실 함수의 미분값을 이용하는 방법
+
 1. 초기 모델 파라미터 $\theta_1$에 해당하는 목적함수 $J(\theta_1)$의 미분값을 구한다
 2. 1에서 구한 미분값의 반대 방향으로 $\theta_1$을 $\nabla J(\theta_1)$ 만큼 이동시킨다 (학습률 적용)
 $\theta_{t+1} = \theta_{t} + \Delta\theta_{t} \\ \\ \Delta\theta_{t} = -\eta \nabla J(\theta_{t})$
 
 3. 1, 2 단계를 반복한다
+
 - 모든 데이터를 확인해서 경사 하강법을 계산하기 때문에 데이터가 클 수록 학습 시간이 길어짐
 
 ### 확률적 경사 하강법 (Stochastic Gradient Decent)
