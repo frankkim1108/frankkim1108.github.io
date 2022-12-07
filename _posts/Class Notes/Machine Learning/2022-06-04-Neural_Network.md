@@ -23,11 +23,11 @@ use_math: true
 
 ### 3. 비용함수 정의 및 1차 미분식 구하기
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e344470-030e-4631-9954-a8adb8ce60bb/Untitled.png)
+<img src="/assets/img/machine_learning_img/machine_learning_1.png">
 
 - $1 \over 2$가 들어가는 이유는 미분 할 때 의 편의성을 위해서 추가됐다
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b7167ef-3fa2-4769-bbcc-1ab58025960e/Untitled.png)
+<img src="/assets/img/machine_learning_img/machine_learning_2.png">
 
 - Sigmoid 함수는 계산의 편의성을 준다
 
