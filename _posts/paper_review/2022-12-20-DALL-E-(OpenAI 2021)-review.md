@@ -28,15 +28,13 @@ DALL-E is a GPT-3 based model that has has 12 billion parameters and is trained 
 - A language model can generate new text by iteratively sampling 
 $\displaystyle \boldsymbol{\hat{x}_{i+1}}$
 
-$
-\hat{x}_{i+1}\sim f_\theta(x_{i+1}|x_1,x_2, ..., x_i)
-$
+$$\hat{x}_{i+1}\sim f_\theta(x_{i+1}|x_1,x_2, ..., x_i)$$
 
-and then feeding sampling $\hat{x}_{i+1}$
+and then feeding sampling $\displaystyle \boldsymbol{\hat{x}_{i+1}}$
 
 back into the model to sample $\displaystyle \boldsymbol{\hat{x}_{i+2}}$
 
-$\displaystyle \boldsymbol{\hat{x}_{i+2}\sim f_\theta(x_{i+2}|x_1,x_2, ..., x_{i+1})}$
+- $\displaystyle \boldsymbol{\hat{x}_{i+2}\sim f_\theta(x_{i+2}|x_1,x_2, ..., x_{i+1})}$
 
 - This process is repeated until the desired stopping criterion is reached
   - Variation of the smapling methods: "greedy" sampling, top-n sampling, ...
