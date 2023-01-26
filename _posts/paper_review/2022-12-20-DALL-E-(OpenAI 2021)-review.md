@@ -6,6 +6,8 @@ tags: [computer_vision]    # TAG names should always be lowercase
 use_math: true
 ---
 
+{% raw %}
+
 # What is DALL-E
 
 DALL-E is a GPT-3 based model that has has 12 billion parameters and is trained with 250 million data
@@ -28,13 +30,13 @@ DALL-E is a GPT-3 based model that has has 12 billion parameters and is trained 
 - A language model can generate new text by iteratively sampling 
 $\displaystyle \boldsymbol{\hat{x}_{i+1}}$
 
-Equation : $\displaystyle \boldsymbol{\hat{x}_{i+1}\sim f_\theta(x_{i+1}|x_1,x_2, ..., x_i)}$
+$\displaystyle \boldsymbol{\hat{x}_{i+1}\sim f_\theta(x_{i+1}|x_1,x_2, ..., x_i)}$
 
 and then feeding sampling $\displaystyle \boldsymbol{\hat{x}_{i+1}}$
 
 back into the model to sample $\displaystyle \boldsymbol{\hat{x}_{i+2}}$
 
-Equation: $\displaystyle \boldsymbol{\hat{x}_{i+2}\sim f_\theta(x_{i+2}|x_1,x_2, ..., x_{i+1})}$
+$\displaystyle \boldsymbol{\hat{x}_{i+2}\sim f_\theta(x_{i+2}|x_1,x_2, ..., x_{i+1})}$
 
 - This process is repeated until the desired stopping criterion is reached
   - Variation of the smapling methods: "greedy" sampling, top-n sampling, ...
@@ -86,3 +88,5 @@ Equation: $\displaystyle \boldsymbol{\hat{x}_{i+2}\sim f_\theta(x_{i+2}|x_1,x_2,
 ## Image Analyze Result
 - After training, number of N images are made according to a text
 - In this paper the N value was 512
+
+{% endraw %}
