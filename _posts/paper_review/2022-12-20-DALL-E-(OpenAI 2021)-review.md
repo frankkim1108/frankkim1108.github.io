@@ -37,7 +37,8 @@ and then feeding sampling $\displaystyle \boldsymbol{\hat{x}_{i+1}}$
 
 back into the model to sample $\displaystyle \boldsymbol{\hat{x}_{i+2}}$
 
-Equation: $\displaystyle \boldsymbol{\hat{x}_{i+2}\sim f_\theta(x_{i+2}|x_1,x_2, ..., x_{i+1})}$
+Equation: 
+$\displaystyle \boldsymbol{\hat{x}_{i+2}}$
 
 - This process is repeated until the desired stopping criterion is reached
   - Variation of the smapling methods: "greedy" sampling, top-n sampling, ...
